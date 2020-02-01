@@ -7,7 +7,7 @@ Fitbeat is a small site that lets you choose and personalised trainings while re
 just surf to
 
 ```
-https://eranltd.surge.sh/
+https://fitbeat.surge.sh/
 ```
 
 ## Development
