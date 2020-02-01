@@ -20,7 +20,12 @@ fork repository & edit via your favorite IDE
 
 maybe you'll need to run xcode-select --install
 
+## Dependecies
 
+```
+Bootstrap, node-sass,gyp
+
+```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
