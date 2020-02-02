@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import HomePage from './pages/homepage/homepage.component';
+import Header from './components/header/header.component'
 import './App.css';
-
-const NavBar = () => (
-  <div className="navbar">
-    <h3>Under Construction...</h3>
-    <Link to="/">Main Link</Link>
-    <Link to="/completed">Custom Completed Tasks</Link>
-  </div>
-);
-
-
-
+     
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
         <div>
-        <NavBar/>
+       <Header/>
        
-        {/**Insert your code here */}
 
+        <HomePage/>
 
 
         </div>
@@ -31,3 +23,7 @@ class App extends Component {
 }
 
 export default App;
+
+//TODO : add Cross-site Scss modules
+//scss
+//
