@@ -1,11 +1,13 @@
 import React from 'react'
 import './main-selection-form.styles.scss';
 import avatar from '../../images/avatar-01.jpg'; // Tell Webpack this JS file uses this image
-import { Dropdown } from 'react-bootstrap';
+
+import BodyPlanSelection from './body-plan-selection/body-plan-selection';
 
 
 class MainSelectionForm extends React.Component {
-    constructor(props) {
+    
+  constructor(props) {
       super(props);
       this.state = {value: ''};
   
@@ -23,10 +25,8 @@ class MainSelectionForm extends React.Component {
         event.preventDefault();
       }
     
+      
       render() {
-        const { theme } = this.state;
-        const themeClass = theme ? theme.toLowerCase() : 'secondary';
-
         return (
             <div className="d-flex flex-wrap justify-content-center position-absolute w-100 h-100 align-items-center align-content-center">
 
@@ -47,33 +47,35 @@ class MainSelectionForm extends React.Component {
                 <div className="row">
                 <span className="main-selection-form-exercise-plan col-12 text-center d-inline">
 
-                PLAN: <Dropdown variant="flat" className=" col-12 text-center d-inline">
-                <Dropdown.Toggle variant="success" id="dropdown-basic" placeholder="Recipient's username">
-                  
-                </Dropdown.Toggle>
+                <BodyPlanSelection/>
+
+                <ul>
+                <li>
+                
+                PUT ComboBox for selecting type of training: 
+
+                </li>
+
+                <li>
+                PUT ComboBox for selecting type of TimeOfTraining(duration): 
+
+                </li>
+<li>
+                PUT ComboBox for selecting type of difficulty: 
+
+                </li>
+
+                </ul>
               
-                <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">A</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">B</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Full Body</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
 
 
-
+              <div>
+          </div>
+           
                 </span>
                 </div>
-
-               
-
-            
-   
             </div>
-
-              
-            </div>
-            
-          
+            </div>   
         );
       }
     }

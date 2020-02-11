@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage.component';
 import Header from './components/header/header.component'
 import './App.css';
-     
+import 'typeface-roboto';
+
 
 class App extends Component {
   render() {
